@@ -1,14 +1,24 @@
-Se till att vue cli är installerat genom att köra följande kommando:
-vue --version
+# customer-manager-wu2
 
-Om det inte är installerat så kör:
-npm install -g @vue/cli
+## Project setup
+```
+npm install
+```
 
-Sen skapa ett nytt tomt projekt med:
-vue create .
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-Välj följande alternativ
-- Vue3
-- Babel
-- Linter
-- Router
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
