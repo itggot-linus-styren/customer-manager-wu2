@@ -12,6 +12,7 @@ export default {
       console.log(
         "AddCustomer.vue@createCustomer: " + JSON.stringify(customer)
       );
+      localStorage.setItem("customers", customer);
     },
   },
   components: {
