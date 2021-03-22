@@ -20,7 +20,9 @@ export default {
     CustomerForm,
   },
   created() {
-    console.log("Customer.vue@created: " + this.$route.params.id);    
+    console.log("Customer.vue@created: " + this.$route.params.id);
+    const customers = JSON.parse(localStorage.getItem("customers"));
+    this.customer = customers[this.$route.params.id];
   }
 };
 </script>
