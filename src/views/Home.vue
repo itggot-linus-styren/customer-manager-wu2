@@ -3,31 +3,19 @@
     <h1>Kunder</h1>
     <div class="main">
       <hr />
-      <table class="pure-table">
-        <thead>
-          <th>Förnamn</th>
-          <th>Efternamn</th>
-          <th>E-mail</th>
-          <th></th>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Namn</td>
-            <td>Namnsson</td>
-            <td>namn.namnsson@gmail.com</td>
-            <td>
-              <button class="pure-button">Visa</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <CustomerTable />
     </div>
   </div>
 </template>
 
 <script>
+import CustomerTable from "@/components/CustomerTable.vue";
+
 export default {
   name: "Home",
+  components: {
+    CustomerTable,
+  },
 };
 </script>
 
@@ -40,9 +28,7 @@ export default {
   margin: 0 4em;
 }
 
-.main,
-table {
+.main {
   width: 100%;
-  text-align: left;
 }
 </style>
