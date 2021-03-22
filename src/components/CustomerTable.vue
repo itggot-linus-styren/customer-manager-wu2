@@ -7,10 +7,10 @@
       <th></th>
     </thead>
     <tbody>
-      <tr>
-        <td>{{ customers.firstname }}</td>
-        <td>{{ customers.lastname }}</td>
-        <td>{{ customers.email }}</td>
+      <tr v-for="(customer, index) in customers" :key="index">
+        <td>{{ customer.firstname }}</td>
+        <td>{{ customer.lastname }}</td>
+        <td>{{ customer.email }}</td>
         <td>
           <router-link class="pure-button" to="/customers/1">Visa</router-link>
         </td>
@@ -24,7 +24,7 @@ export default {
   name: "CustomerTable",
   data() {
     return {
-      customers: {}
+      customers: []
     }
   },
   created() {

@@ -12,7 +12,13 @@ export default {
       console.log(
         "AddCustomer.vue@createCustomer: " + JSON.stringify(customer)
       );
-      localStorage.setItem("customers", JSON.stringify(customer));
+      let customers = JSON.parse(localStorage.getItem("customers"));
+      customers.push(customer);
+      localStorage.setItem("customers", JSON.stringify(customers));
+      this.$router.push({
+        name: "Customer",
+        params: { id: customers.length - 1 },
+      });
     },
   },
   components: {
