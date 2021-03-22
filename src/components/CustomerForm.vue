@@ -11,7 +11,16 @@
 <script>
 export default {
   name: "CustomerForm",
-  props: ["customer"],
+  data() {
+    return {
+      customer: {
+        firstname: this.initialCustomer?.firstname,
+        lastname: this.initialCustomer?.lastname,
+        email: this.initialCustomer?.email,
+      },
+    };
+  },
+  props: ["initialCustomer"],
 };
 </script>
 

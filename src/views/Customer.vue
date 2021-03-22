@@ -1,5 +1,5 @@
 <template>
-  <CustomerForm :customer="customer" />
+  <CustomerForm :initialCustomer="customer" />
 </template>
 
 <script>
