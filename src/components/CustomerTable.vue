@@ -7,12 +7,18 @@
       <th></th>
     </thead>
     <tbody>
-      <tr v-for="(customer, index) in customers" :key="index">
+      <tr
+        v-for="(customer, index) in customers"
+        :key="index"
+        v-show="customer.lastname.startsWith(search)"
+      >
         <td>{{ customer.firstname }}</td>
         <td>{{ customer.lastname }}</td>
         <td>{{ customer.email }}</td>
         <td>
-          <router-link class="pure-button" :to="`/customers/${index}`">Visa</router-link>
+          <router-link class="pure-button" :to="`/customers/${index}`"
+            >Visa</router-link
+          >
         </td>
       </tr>
     </tbody>
@@ -24,12 +30,13 @@ export default {
   name: "CustomerTable",
   data() {
     return {
-      customers: []
-    }
+      customers: [],
+      search: "",
+    };
   },
   created() {
     this.customers = JSON.parse(localStorage.getItem("customers"));
-  }
+  },
 };
 </script>
 
