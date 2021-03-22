@@ -1,9 +1,9 @@
 <template>
   <form data-cy="form" class="pure-form">
     <fieldset>
-      <input type="text" placeholder="Förnamn" />
-      <input type="text" placeholder="Efternamn" />
-      <input type="email" placeholder="E-mail" />
+      <input type="text" placeholder="Förnamn" :value="customer.firstname" />
+      <input type="text" placeholder="Efternamn" :value="customer.lastname" />
+      <input type="email" placeholder="E-mail" :value="customer.email" />
     </fieldset>
   </form>
 </template>
