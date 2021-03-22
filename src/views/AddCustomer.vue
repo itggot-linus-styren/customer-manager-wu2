@@ -1,5 +1,11 @@
 <template>
-  <form class="pure-form"></form>
+  <form class="pure-form">
+    <fieldset>
+      <input type="text" placeholder="Förnamn" />
+      <input type="text" placeholder="Efternamn" />
+      <input type="email" placeholder="E-mail" />
+    </fieldset>
+  </form>
 </template>
 
 <script>
