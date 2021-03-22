@@ -8,9 +8,9 @@
     </thead>
     <tbody>
       <tr>
-        <td>Namn</td>
-        <td>Namnsson</td>
-        <td>namn.namnsson@gmail.com</td>
+        <td>{{ customers.firstname }}</td>
+        <td>{{ customers.lastname }}</td>
+        <td>{{ customers.email }}</td>
         <td>
           <router-link class="pure-button" to="/customers/1">Visa</router-link>
         </td>
@@ -22,6 +22,14 @@
 <script>
 export default {
   name: "CustomerTable",
+  data() {
+    return {
+      customers: {}
+    }
+  },
+  created() {
+    this.customers = localStorage.getItem("customers");
+  }
 };
 </script>
 
