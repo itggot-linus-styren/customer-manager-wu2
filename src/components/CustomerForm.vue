@@ -1,9 +1,24 @@
 <template>
   <form data-cy="form" class="pure-form">
     <fieldset>
-      <input type="text" placeholder="Förnamn" :value="customer.firstname" />
-      <input type="text" placeholder="Efternamn" :value="customer.lastname" />
-      <input type="email" placeholder="E-mail" :value="customer.email" />
+      <input
+        type="text"
+        placeholder="Förnamn"
+        :value="customer.firstname"
+        :readonly="!editable"
+      />
+      <input
+        type="text"
+        placeholder="Efternamn"
+        :value="customer.lastname"
+        :readonly="!editable"
+      />
+      <input
+        type="email"
+        placeholder="E-mail"
+        :value="customer.email"
+        :readonly="!editable"
+      />
     </fieldset>
   </form>
 </template>
@@ -20,7 +35,7 @@ export default {
       },
     };
   },
-  props: ["initialCustomer"],
+  props: ["initialCustomer", "editable"],
 };
 </script>
 
