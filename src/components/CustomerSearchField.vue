@@ -17,4 +17,8 @@ export default {};
 form {
   margin: 1em 0;
 }
+
+input[type="text"] {
+  width: 100%;
+}
 </style>
