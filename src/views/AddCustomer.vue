@@ -1,4 +1,6 @@
-<template></template>
+<template>
+  <form class="pure-form"></form>
+</template>
 
 <script>
 export default {};
