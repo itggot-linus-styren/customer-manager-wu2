@@ -3,6 +3,7 @@
     <h1>Kunder</h1>
     <div class="main">
       <hr />
+      <CustomerSearchField />
       <CustomerTable />
     </div>
   </div>
@@ -10,11 +11,13 @@
 
 <script>
 import CustomerTable from "@/components/CustomerTable.vue";
+import CustomerSearchField from "@/components/CustomerSearchField.vue";
 
 export default {
   name: "Home",
   components: {
     CustomerTable,
+    CustomerSearchField,
   },
 };
 </script>
