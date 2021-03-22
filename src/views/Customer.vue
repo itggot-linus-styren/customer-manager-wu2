@@ -19,6 +19,9 @@ export default {
   components: {
     CustomerForm,
   },
+  created() {
+    console.log("Customer.vue@created: " + this.$route.params.id);    
+  }
 };
 </script>
 
