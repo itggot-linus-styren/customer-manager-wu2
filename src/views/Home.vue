@@ -14,7 +14,7 @@
           <td>Namn</td>
           <td>Namnsson</td>
           <td>namn.namnsson@gmail.com</td>
-          <td><button>Visa</button></td>
+          <td><button class="pure-button">Visa</button></td>
         </tr>
       </tbody>
     </table>
