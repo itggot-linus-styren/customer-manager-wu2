@@ -2,7 +2,7 @@
   <div class="home">
     <h1>Kunder</h1>
     <hr />
-    <table>
+    <table class="pure-table">
       <thead>
         <th>Förnamn</th>
         <th>Efternamn</th>
