@@ -1,5 +1,5 @@
 <template>
-  <CustomerForm />
+  <CustomerForm editable />
 </template>
 
 <script>

@@ -35,7 +35,10 @@ export default {
       },
     };
   },
-  props: ["initialCustomer", "editable"],
+  props: {
+    initialCustomer: Object,
+    editable: Boolean,
+  }
 };
 </script>
 
