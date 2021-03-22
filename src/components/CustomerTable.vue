@@ -28,7 +28,7 @@ export default {
     }
   },
   created() {
-    this.customers = localStorage.getItem("customers");
+    this.customers = JSON.parse(localStorage.getItem("customers"));
   }
 };
 </script>
