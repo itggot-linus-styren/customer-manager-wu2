@@ -24,6 +24,13 @@
         :readonly="!editable"
       />
     </fieldset>
+    <button
+      type="submit"
+      class="pure-button pure-button-primary"
+      v-if="editable"
+    >
+      Skapa
+    </button>
   </form>
 </template>
 
@@ -42,7 +49,7 @@ export default {
   props: {
     initialCustomer: Object,
     editable: Boolean,
-  }
+  },
 };
 </script>
 
