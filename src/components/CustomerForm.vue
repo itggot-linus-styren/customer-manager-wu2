@@ -1,5 +1,5 @@
 <template>
-  <form class="pure-form">
+  <form data-cy="form" class="pure-form">
     <fieldset>
       <input type="text" placeholder="Förnamn" />
       <input type="text" placeholder="Efternamn" />
@@ -9,7 +9,10 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "CustomerForm",
+  props: ["customer"],
+};
 </script>
 
 <style></style>

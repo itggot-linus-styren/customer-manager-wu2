@@ -1,15 +1,25 @@
 <template>
-  <form class="pure-form">
-    <fieldset>
-      <input type="text" value="Namn" readonly />
-      <input type="text" value="Namnsson" readonly />
-      <input type="email" value="namn.namnsson@gmail.com" readonly />
-    </fieldset>
-  </form>
+  <CustomerForm :customer="customer" />
 </template>
 
 <script>
-export default {};
+import CustomerForm from "@/components/CustomerForm.vue";
+
+export default {
+  name: "Customer",
+  data() {
+    return {
+      customer: {
+        firstname: "Namn",
+        lastname: "Namnsson",
+        email: "namn.namnsson@gmail.com",
+      },
+    };
+  },
+  components: {
+    CustomerForm,
+  },
+};
 </script>
 
 <style></style>
