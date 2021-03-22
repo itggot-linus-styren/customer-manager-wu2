@@ -6,21 +6,21 @@
         type="text"
         class="pure-input-1"
         placeholder="Förnamn"
-        :value="customer.firstname"
+        v-model="customer.firstname"
         :readonly="!editable"
       />
       <input
         type="text"
         class="pure-input-1"
         placeholder="Efternamn"
-        :value="customer.lastname"
+        v-model="customer.lastname"
         :readonly="!editable"
       />
       <input
         type="email"
         class="pure-input-1"
         placeholder="E-mail"
-        :value="customer.email"
+        v-model="customer.email"
         :readonly="!editable"
       />
     </fieldset>
