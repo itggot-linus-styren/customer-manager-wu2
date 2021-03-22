@@ -12,7 +12,7 @@
         <td>{{ customer.lastname }}</td>
         <td>{{ customer.email }}</td>
         <td>
-          <router-link class="pure-button" to="/customers/1">Visa</router-link>
+          <router-link class="pure-button" :to="`/customers/${index}`">Visa</router-link>
         </td>
       </tr>
     </tbody>
