@@ -28,6 +28,7 @@
       type="submit"
       class="pure-button pure-button-primary"
       v-if="editable"
+      @click.prevent="$emit('onSubmit', customer)"
     >
       Skapa
     </button>
